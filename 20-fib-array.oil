@@ -1,0 +1,41 @@
+        [] __int;
+        int __index;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+int fibonacci = 
+pushnum0 pushnum1 int index = pushnum2 
+while_9_15_0:;
+        index   pushnum30 
+        if (!) goto break_9_15_19;
+{
++ 
+index + pushnum1 
+popvarindex 
+}
+        goto while_9_15_0;
+break_9_15_19):;
+while pushnum< pushnum0 popvarindex puts("Numeri di figlio Bonacci\n");
+while_9_22_0:;
+        index   pushnum30 
+        if (!) goto break_9_22_19;
+{
+puts("fibonacci[");
+puti(index);
+puts("] = ");
+puti([);
+endl();
+index + pushnum1 
+popvarindex 
+}
+        goto while_9_22_0;
+break_9_22_19):;
+while pushnum< 

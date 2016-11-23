@@ -1,0 +1,8 @@
+partnercheck: ./PARTNER: format OK:
+username = rasehgal
+passwd   = *
+uid      = 57808
+gid      = 100
+gecos    = Rashmi Sehgal
+home     = /afs/cats.ucsc.edu/users/b/rasehgal
+shell    = /bin/csh

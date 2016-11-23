@@ -1,0 +1,19 @@
+ DECLID __assert_fail 8.23.5 {0} void function lval vaddr  
+ DECLID expr 8.23.27 {1} string variable param lval vaddr  
+ DECLID file 8.23.40 {1} string variable param lval vaddr  
+ DECLID line 8.23.50 {1} int variable param lval vaddr  
+ DECLID putb 8.24.5 {0} void function lval vaddr  
+ DECLID b 8.24.16 {2} bool variable param lval vaddr  
+ DECLID putc 8.25.5 {0} void function lval vaddr  
+ DECLID c 8.25.16 {3} char variable param lval vaddr  
+ DECLID puti 8.26.5 {0} void function lval vaddr  
+ DECLID i 8.26.15 {4} int variable param lval vaddr  
+ DECLID puts 8.27.5 {0} void function lval vaddr  
+ DECLID s 8.27.18 {5} string variable param lval vaddr  
+ DECLID endl 8.28.5 {0} void function lval vaddr  
+ DECLID getc 8.29.4 {0} int function lval vaddr  
+ DECLID getw 8.30.7 {0} string function lval vaddr  
+ DECLID getln 8.31.7 {0} string function lval vaddr  
+ DECLID getargv 8.32.9 {0} string array function lval vaddr  
+ DECLID exit 8.33.5 {0} void function lval vaddr  
+ DECLID status 8.33.15 {11} int variable param lval vaddr  

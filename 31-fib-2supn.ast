@@ -1,0 +1,117 @@
+ROOT ""  0.0.0 {0} lval vaddr              
+|  PROTOTYPE ""  8.23.0 {0}  
+|  |  VOID "void"  8.23.0 {0} 
+|  |  |  DECLID "__assert_fail"  8.23.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.23.19 {0}   
+|  |  |  STRING "string"  8.23.20 {0} string 
+|  |  |  |  DECLID "expr"  8.23.27 {1} string variable param lval vaddr 
+|  |  |  STRING "string"  8.23.33 {0} string 
+|  |  |  |  DECLID "file"  8.23.40 {1} string variable param lval vaddr 
+|  |  |  INT "int"  8.23.46 {0} int 
+|  |  |  |  DECLID "line"  8.23.50 {1} int variable param lval vaddr 
+|  PROTOTYPE ""  8.24.0 {0}  
+|  |  VOID "void"  8.24.0 {0} 
+|  |  |  DECLID "putb"  8.24.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.24.10 {0} 
+|  |  |  BOOL "bool"  8.24.11 {0} bool 
+|  |  |  |  DECLID "b"  8.24.16 {2} bool variable param lval vaddr 
+|  PROTOTYPE ""  8.25.0 {0}  
+|  |  VOID "void"  8.25.0 {0} 
+|  |  |  DECLID "putc"  8.25.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.25.10 {0} 
+|  |  |  CHAR "char"  8.25.11 {0} char 
+|  |  |  |  DECLID "c"  8.25.16 {3} char variable param lval vaddr 
+|  PROTOTYPE ""  8.26.0 {0}  
+|  |  VOID "void"  8.26.0 {0} 
+|  |  |  DECLID "puti"  8.26.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.26.10 {0} 
+|  |  |  INT "int"  8.26.11 {0} int 
+|  |  |  |  DECLID "i"  8.26.15 {4} int variable param lval vaddr 
+|  PROTOTYPE ""  8.27.0 {0}  
+|  |  VOID "void"  8.27.0 {0} 
+|  |  |  DECLID "puts"  8.27.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.27.10 {0} 
+|  |  |  STRING "string"  8.27.11 {0} string 
+|  |  |  |  DECLID "s"  8.27.18 {5} string variable param lval vaddr 
+|  PROTOTYPE ""  8.28.0 {0}  
+|  |  VOID "void"  8.28.0 {0} 
+|  |  |  DECLID "endl"  8.28.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.28.10 {0} 
+|  PROTOTYPE ""  8.29.0 {0}  
+|  |  INT "int"  8.29.0 {0} int 
+|  |  |  DECLID "getc"  8.29.4 {0} int function lval vaddr 
+|  |  PARAMLIST "("  8.29.9 {0} 
+|  PROTOTYPE ""  8.30.0 {0}  
+|  |  STRING "string"  8.30.0 {0} string 
+|  |  |  DECLID "getw"  8.30.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.30.12 {0} 
+|  PROTOTYPE ""  8.31.0 {0}  
+|  |  STRING "string"  8.31.0 {0} string 
+|  |  |  DECLID "getln"  8.31.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.31.13 {0} 
+|  PROTOTYPE ""  8.32.6 {0}  
+|  |  ARRAY "[]"  8.32.6 {0} array  
+|  |  |  STRING "string"  8.32.0 {0} function 
+|  |  |  DECLID "getargv"  8.32.9 {0} string array function lval vaddr 
+|  |  PARAMLIST "("  8.32.17 {0} 
+|  PROTOTYPE ""  8.33.0 {0}  
+|  |  VOID "void"  8.33.0 {0} 
+|  |  |  DECLID "exit"  8.33.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.33.10 {0} 
+|  |  |  INT "int"  8.33.11 {0} int 
+|  |  |  |  DECLID "status"  8.33.15 {11} int variable param lval vaddr 
+|  FUNCTION ""  9.8.0 {0}   
+|  |  INT "int"  9.8.0 {0} int 
+|  |  |  DECLID "fibonacci"  9.8.4 {0} int function lval vaddr 
+|  |  PARAMLIST "("  9.8.14 {0} 
+|  |  |  INT "int"  9.8.15 {0} int 
+|  |  |  |  DECLID "n"  9.8.19 {13} int variable param lval vaddr 
+|  |  BLOCK "{"  9.8.22 {13}  
+|  |  |  IF "if"  9.9.3 {13} lval vaddr  
+|  |  |  |  LT "<"  9.9.9 {13}  
+|  |  |  |  |  IDENT "n"  9.9.7 {13} (0.0.0)
+|  |  |  |  |  INTCON "2"  9.9.11 {13} int const 
+|  |  |  |  RETURN "return"  9.9.14 {13} lval vaddr 
+|  |  |  |  |  IDENT "n"  9.9.21 {13} (0.0.0)
+|  |  |  RETURN "return"  9.10.3 {13} lval vaddr 
+|  |  |  |  '+' "+"  9.10.28 {13}  
+|  |  |  |  |  CALL "("  9.10.20 {13}  
+|  |  |  |  |  |  IDENT "fibonacci"  9.10.10 {13} (0.0.0)
+|  |  |  |  |  |  '-' "-"  9.10.23 {13}  
+|  |  |  |  |  |  |  IDENT "n"  9.10.21 {13} (0.0.0)
+|  |  |  |  |  |  |  INTCON "1"  9.10.25 {13} int const 
+|  |  |  |  |  CALL "("  9.10.40 {13}  
+|  |  |  |  |  |  IDENT "fibonacci"  9.10.30 {13} (0.0.0)
+|  |  |  |  |  |  '-' "-"  9.10.43 {13}  
+|  |  |  |  |  |  |  IDENT "n"  9.10.41 {13} (0.0.0)
+|  |  |  |  |  |  |  INTCON "2"  9.10.45 {13} int const 
+|  VARDECL "="  9.15.6 {0} int  
+|  |  INT "int"  9.15.0 {0} int 
+|  |  |  DECLID "n"  9.15.4 {0} int variable lval vaddr 
+|  |  INTCON "0"  9.15.8 {0} int const 
+|  WHILE "while"  9.16.0 {0} lval vaddr  
+|  |  LT "<"  9.16.9 {0} bool vreg  
+|  |  |  IDENT "n"  9.16.7 {0} int variable lval vaddr (9.15.4)
+|  |  |  INTCON "10"  9.16.11 {0} int const 
+|  |  BLOCK "{"  9.16.15 {14}      
+|  |  |  CALL "("  9.17.8 {14}  
+|  |  |  |  IDENT "puts"  9.17.3 {14} void function lval vaddr (8.27.5)
+|  |  |  |  STRINGCON ""fibonacci(""  9.17.9 {14} string const 
+|  |  |  CALL "("  9.18.8 {14} int  
+|  |  |  |  IDENT "puti"  9.18.3 {14} void function lval vaddr (8.26.5)
+|  |  |  |  IDENT "n"  9.18.9 {14} int variable lval vaddr (9.15.4)
+|  |  |  CALL "("  9.19.8 {14}  
+|  |  |  |  IDENT "puts"  9.19.3 {14} void function lval vaddr (8.27.5)
+|  |  |  |  STRINGCON "") = ""  9.19.9 {14} string const 
+|  |  |  CALL "("  9.20.8 {14}  
+|  |  |  |  IDENT "puti"  9.20.3 {14} void function lval vaddr (8.26.5)
+|  |  |  |  CALL "("  9.20.19 {14} int  
+|  |  |  |  |  IDENT "fibonacci"  9.20.9 {14} int function lval vaddr (9.8.4)
+|  |  |  |  |  IDENT "n"  9.20.20 {14} int variable lval vaddr (9.15.4)
+|  |  |  CALL "("  9.21.8 {14} void 
+|  |  |  |  IDENT "endl"  9.21.3 {14} void function lval vaddr (8.28.5)
+|  |  |  '=' "="  9.22.5 {14} vreg  
+|  |  |  |  IDENT "n"  9.22.3 {14} int variable lval vaddr (9.15.4)
+|  |  |  |  '+' "+"  9.22.9 {14} int vreg  
+|  |  |  |  |  IDENT "n"  9.22.7 {14} int variable lval vaddr (9.15.4)
+|  |  |  |  |  INTCON "1"  9.22.11 {14} int const 

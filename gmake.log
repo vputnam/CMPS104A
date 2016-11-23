@@ -1,0 +1,7 @@
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c auxlib.cpp main.cpp stringset.cpp emitter.cpp astree.cpp lyutils.cpp typecheck.cpp symtable.cpp symstack.cpp 
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c yylex.cc yyparse.cc
+yylex.cc: In function ‘yy_buffer_state* yy_scan_bytes(const char*, yy_size_t)’:
+yylex.cc:2107:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for ( i = 0; i < _yybytes_len; ++i )
+                 ^
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -ooc auxlib.o main.o stringset.o emitter.o astree.o lyutils.o typecheck.o symtable.o symstack.o yylex.o yyparse.o

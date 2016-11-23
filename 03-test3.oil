@@ -1,0 +1,21 @@
+        int __a;
+        int __b;
+        int __c;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+int a = pushnum3 
+int b = pushnum8 
+int c = a + b 
+
+b + c 
+popvara puti(a);
+putc('\n');

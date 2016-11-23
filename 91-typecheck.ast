@@ -1,0 +1,130 @@
+ROOT ""  0.0.0 {0} lval vaddr                    
+|  VARDECL "="  6.7.8 {0} array  
+|  |  ARRAY "[]"  6.7.3 {0} array  
+|  |  |  INT "int"  6.7.0 {0} variable lval 
+|  |  |  DECLID "a"  6.7.6 {0} int array lval vaddr 
+|  |  NULL "null"  6.7.10 {0} 
+|  VARDECL "="  6.8.14 {0} array  
+|  |  ARRAY "[]"  6.8.9 {0} array  
+|  |  |  TYPEID "reference"  6.8.0 {0} variable lval 
+|  |  |  DECLID "a"  6.8.12 {0} array lval vaddr 
+|  |  NEWARRAY "new"  6.8.16 {0} array vreg  
+|  |  |  STRING "string"  6.8.20 {0} 
+|  |  |  INTCON "10"  6.8.27 {0} int const 
+|  PROTOTYPE ""  6.9.0 {0}  
+|  |  VOID "void"  6.9.0 {0} 
+|  |  |  DECLID "foo"  6.9.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  6.9.9 {0} 
+|  PROTOTYPE ""  6.10.0 {0}  
+|  |  VOID "void"  6.10.0 {0} 
+|  |  |  DECLID "foo"  6.10.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  6.10.9 {0} 
+|  |  |  INT "int"  6.10.10 {0} int 
+|  |  |  |  DECLID "a"  6.10.14 {2} int variable param lval vaddr 
+|  FUNCTION ""  6.11.0 {0}   
+|  |  VOID "void"  6.11.0 {0} 
+|  |  |  DECLID "foo"  6.11.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  6.11.9 {0}  
+|  |  |  ARRAY "[]"  6.11.13 {0} array  
+|  |  |  |  INT "int"  6.11.10 {4} variable param lval 
+|  |  |  |  DECLID "a"  6.11.16 {0} int array lval vaddr 
+|  |  |  ARRAY "[]"  6.11.22 {0} array  
+|  |  |  |  INT "int"  6.11.19 {4} variable param lval 
+|  |  |  |  DECLID "b"  6.11.25 {0} int array lval vaddr 
+|  |  BLOCK "{"  6.11.28 {4} 
+|  |  |  VARDECL "="  6.11.35 {4} int  
+|  |  |  |  INT "int"  6.11.29 {4} int 
+|  |  |  |  |  DECLID "x"  6.11.33 {4} int variable lval vaddr 
+|  |  |  |  '+' "+"  6.11.39 {4}  
+|  |  |  |  |  IDENT "a"  6.11.37 {4} (0.0.0)
+|  |  |  |  |  IDENT "b"  6.11.41 {4} (0.0.0)
+|  STRUCT "struct"  6.12.0 {0}   
+|  |  TYPEID "foo"  6.12.7 {0} struct 
+|  |  INT "int"  6.12.13 {0} int 
+|  |  |  FIELD "a"  6.12.17 {0} int field 
+|  |  INT "int"  6.12.20 {0} int 
+|  |  |  FIELD "b"  6.12.24 {0} int field 
+|  '+' "+"  6.14.2 {0}  
+|  |  IDENT "a"  6.14.0 {0} (0.0.0)
+|  |  IDENT "b"  6.14.4 {0} (0.0.0)
+|  CALL "("  6.15.2 {0} 
+|  |  IDENT "f"  6.15.0 {0} (0.0.0)
+|  CALL "("  6.16.2 {0} int  
+|  |  IDENT "f"  6.16.0 {0} (0.0.0)
+|  |  IDENT "x"  6.16.3 {0} int variable lval vaddr (6.11.33) 
+|  |  |  '+' "+"  6.16.7 {0}  
+|  |  |  |  IDENT "y"  6.16.6 {0} (0.0.0)
+|  |  |  |  INTCON "3"  6.16.8 {0} int const 
+|  |  |  IDENT "z"  6.16.11 {0} (0.0.0)
+|  '+' "+"  6.17.4 {0}  
+|  |  IDENT "foo"  6.17.0 {0} void function lval vaddr (6.9.5)
+|  |  IDENT "bar"  6.17.6 {0} (0.0.0)
+|  '=' "="  6.18.2 {0}  
+|  |  IDENT "a"  6.18.0 {0} (0.0.0)
+|  |  '=' "="  6.18.6 {0}  
+|  |  |  IDENT "b"  6.18.4 {0} (0.0.0)
+|  |  |  '=' "="  6.18.10 {0}  
+|  |  |  |  IDENT "c"  6.18.8 {0} (0.0.0)
+|  |  |  |  IDENT "d"  6.18.12 {0} (0.0.0)
+|  '=' "="  6.19.5 {0}  
+|  |  IDENT "test"  6.19.0 {0} (0.0.0)
+|  |  '+' "+"  6.19.17 {0}  
+|  |  |  '+' "+"  6.19.11 {0}  
+|  |  |  |  IDENT "abc"  6.19.7 {0} (0.0.0)
+|  |  |  |  IDENT "def"  6.19.13 {0} (0.0.0)
+|  |  |  IDENT "ghi"  6.19.19 {0} (0.0.0)
+|  '+' "+"  6.20.14 {0}  
+|  |  '+' "+"  6.20.5 {0}  
+|  |  |  IDENT "this"  6.20.0 {0} (0.0.0)
+|  |  |  '*' "*"  6.20.10 {0}  
+|  |  |  |  INTCON "23"  6.20.7 {0} int const 
+|  |  |  |  IDENT "a"  6.20.12 {0} (0.0.0)
+|  |  STRINGCON ""hello""  6.20.16 {0} string const 
+|  WHILE "while"  6.21.0 {0} lval vaddr  
+|  |  LT "<"  6.21.9 {0}  
+|  |  |  IDENT "a"  6.21.7 {0} (0.0.0)
+|  |  |  IDENT "b"  6.21.11 {0} (0.0.0)
+|  |  '=' "="  6.21.16 {0}  
+|  |  |  IDENT "f"  6.21.14 {0} (0.0.0)
+|  |  |  '+' "+"  6.21.20 {0}  
+|  |  |  |  IDENT "f"  6.21.18 {0} (0.0.0)
+|  |  |  |  INTCON "1"  6.21.22 {0} int const 
+|  RETURN "return"  6.22.0 {0} lval vaddr 
+|  |  '+' "+"  6.22.9 {0} int vreg  
+|  |  |  INTCON "3"  6.22.7 {0} int const 
+|  |  |  INTCON "4"  6.22.11 {0} int const 
+|  '=' "="  6.23.5 {0}  
+|  |  INDEX "["  6.23.1 {0} lval vaddr  
+|  |  |  IDENT "a"  6.23.0 {0} (0.0.0)
+|  |  |  IDENT "i"  6.23.2 {0} (0.0.0)
+|  |  INDEX "["  6.23.8 {0} lval vaddr  
+|  |  |  IDENT "b"  6.23.7 {0} (0.0.0)
+|  |  |  IDENT "j"  6.23.9 {0} (0.0.0)
+|  RETURNVOID "return"  6.24.0 {0} 
+|  WHILE "while"  6.25.0 {0} lval vaddr  
+|  |  TRUE "true"  6.25.7 {0} bool const 
+|  |  BLOCK "{"  6.25.13 {5}  
+|  |  |  '=' "="  6.25.16 {5}  
+|  |  |  |  IDENT "a"  6.25.14 {5} (0.0.0)
+|  |  |  |  INTCON "3"  6.25.18 {5} int const 
+|  |  |  '=' "="  6.25.23 {5}  
+|  |  |  |  IDENT "b"  6.25.21 {5} (0.0.0)
+|  |  |  |  INTCON "4"  6.25.25 {5} int const 
+|  IF "if"  6.26.0 {0} lval vaddr  
+|  |  EQ "=="  6.26.6 {0}  
+|  |  |  IDENT "a"  6.26.4 {0} (0.0.0)
+|  |  |  IDENT "b"  6.26.9 {0} (0.0.0)
+|  |  CALL "("  6.26.14 {0} int  
+|  |  |  IDENT "f"  6.26.12 {0} (0.0.0)
+|  |  |  IDENT "x"  6.26.15 {0} int variable lval vaddr (6.11.33)
+|  IFELSE "if"  6.27.0 {0} lval vaddr   
+|  |  NE "!="  6.27.6 {0}  
+|  |  |  IDENT "a"  6.27.4 {0} (0.0.0)
+|  |  |  IDENT "b"  6.27.9 {0} (0.0.0)
+|  |  '=' "="  6.27.14 {0}  
+|  |  |  IDENT "y"  6.27.12 {0} (0.0.0)
+|  |  |  INTCON "3"  6.27.16 {0} int const 
+|  |  CALL "("  6.27.26 {0}  
+|  |  |  IDENT "f"  6.27.24 {0} (0.0.0)
+|  |  |  IDENT "y"  6.27.27 {0} (0.0.0)
+|  |  |  |  IDENT "z"  6.27.30 {0} (0.0.0)

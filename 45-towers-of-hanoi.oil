@@ -1,0 +1,39 @@
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+(
+        char* src ,
+        char* dst )
+{
+puts("Move a disk from ");
+puts(src);
+puts(" to ");
+puts(dst);
+puts(".\n");
+
+}
+(
+        int ndisks ,
+        char* src ,
+        char* tmp ,
+        char* dst )
+{
+while_9_14_3:;
+        ndisks   pushnum1 
+        if (!) goto break_9_14_19;
+        goto while_9_14_3;
+break_9_14_19):;
+if pushnum< towers(-);
+move(src);
+towers(-);
+
+}
+towers(4);

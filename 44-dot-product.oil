@@ -1,0 +1,51 @@
+        [] __int;
+        [] __int;
+        int __i;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+int dot_product (
+        int size ,
+        int vec1 ,
+        int vec2 )
+{
+int index = pushnum0 
+int dot = pushnum0 
+while_9_8_3:;
+        index   size 
+        if (!) goto break_9_8_24;
+{
+dot + * 
+
+popvardot index + pushnum1 
+popvarindex 
+}
+        goto while_9_8_3;
+break_9_8_24):;
+while pushnum< dot();
+
+}
+int vec1 = 
+int vec2 = 
+int i = pushnum0 
+while_9_19_0:;
+        i   pushnum10 
+        if (!) goto break_9_19_15;
+{
+i + pushnum10 
+i * pushnum10 
+i + pushnum1 
+popvari 
+}
+        goto while_9_19_0;
+break_9_19_15):;
+while pushnum< puti(();
+endl();

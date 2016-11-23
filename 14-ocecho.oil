@@ -1,0 +1,33 @@
+        [] __string;
+        int __argi;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+char* argv = getargv();
+
+int argi = pushnum1 
+while_9_7_0:;
+          
+        if (!) goto break_9_7_27;
+{
+while_9_8_3:;
+        argi   pushnum1 
+        if (!) goto break_9_8_22;
+putc(' ');
+        goto while_9_8_3;
+break_9_8_22):;
+if pushnum> puts([);
+argi + pushnum1 
+popvarargi 
+}
+        goto while_9_7_0;
+break_9_7_27):;
+while pushnum!= endl();

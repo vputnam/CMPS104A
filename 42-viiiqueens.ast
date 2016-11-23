@@ -1,0 +1,204 @@
+ROOT ""  0.0.0 {0} lval vaddr                
+|  PROTOTYPE ""  8.23.0 {0}  
+|  |  VOID "void"  8.23.0 {0} 
+|  |  |  DECLID "__assert_fail"  8.23.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.23.19 {0}   
+|  |  |  STRING "string"  8.23.20 {0} string 
+|  |  |  |  DECLID "expr"  8.23.27 {1} string variable param lval vaddr 
+|  |  |  STRING "string"  8.23.33 {0} string 
+|  |  |  |  DECLID "file"  8.23.40 {1} string variable param lval vaddr 
+|  |  |  INT "int"  8.23.46 {0} int 
+|  |  |  |  DECLID "line"  8.23.50 {1} int variable param lval vaddr 
+|  PROTOTYPE ""  8.24.0 {0}  
+|  |  VOID "void"  8.24.0 {0} 
+|  |  |  DECLID "putb"  8.24.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.24.10 {0} 
+|  |  |  BOOL "bool"  8.24.11 {0} bool 
+|  |  |  |  DECLID "b"  8.24.16 {2} bool variable param lval vaddr 
+|  PROTOTYPE ""  8.25.0 {0}  
+|  |  VOID "void"  8.25.0 {0} 
+|  |  |  DECLID "putc"  8.25.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.25.10 {0} 
+|  |  |  CHAR "char"  8.25.11 {0} char 
+|  |  |  |  DECLID "c"  8.25.16 {3} char variable param lval vaddr 
+|  PROTOTYPE ""  8.26.0 {0}  
+|  |  VOID "void"  8.26.0 {0} 
+|  |  |  DECLID "puti"  8.26.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.26.10 {0} 
+|  |  |  INT "int"  8.26.11 {0} int 
+|  |  |  |  DECLID "i"  8.26.15 {4} int variable param lval vaddr 
+|  PROTOTYPE ""  8.27.0 {0}  
+|  |  VOID "void"  8.27.0 {0} 
+|  |  |  DECLID "puts"  8.27.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.27.10 {0} 
+|  |  |  STRING "string"  8.27.11 {0} string 
+|  |  |  |  DECLID "s"  8.27.18 {5} string variable param lval vaddr 
+|  PROTOTYPE ""  8.28.0 {0}  
+|  |  VOID "void"  8.28.0 {0} 
+|  |  |  DECLID "endl"  8.28.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.28.10 {0} 
+|  PROTOTYPE ""  8.29.0 {0}  
+|  |  INT "int"  8.29.0 {0} int 
+|  |  |  DECLID "getc"  8.29.4 {0} int function lval vaddr 
+|  |  PARAMLIST "("  8.29.9 {0} 
+|  PROTOTYPE ""  8.30.0 {0}  
+|  |  STRING "string"  8.30.0 {0} string 
+|  |  |  DECLID "getw"  8.30.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.30.12 {0} 
+|  PROTOTYPE ""  8.31.0 {0}  
+|  |  STRING "string"  8.31.0 {0} string 
+|  |  |  DECLID "getln"  8.31.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.31.13 {0} 
+|  PROTOTYPE ""  8.32.6 {0}  
+|  |  ARRAY "[]"  8.32.6 {0} array  
+|  |  |  STRING "string"  8.32.0 {0} function 
+|  |  |  DECLID "getargv"  8.32.9 {0} string array function lval vaddr 
+|  |  PARAMLIST "("  8.32.17 {0} 
+|  PROTOTYPE ""  8.33.0 {0}  
+|  |  VOID "void"  8.33.0 {0} 
+|  |  |  DECLID "exit"  8.33.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.33.10 {0} 
+|  |  |  INT "int"  8.33.11 {0} int 
+|  |  |  |  DECLID "status"  8.33.15 {11} int variable param lval vaddr 
+|  VARDECL "="  9.6.12 {0} array  
+|  |  ARRAY "[]"  9.6.3 {0} array  
+|  |  |  INT "int"  9.6.0 {0} variable lval 
+|  |  |  DECLID "board"  9.6.6 {0} int array lval vaddr 
+|  |  NEWARRAY "new"  9.6.14 {0} array vreg  
+|  |  |  INT "int"  9.6.18 {0} 
+|  |  |  INTCON "8"  9.6.22 {0} int const 
+|  FUNCTION ""  9.8.0 {0}   
+|  |  BOOL "bool"  9.8.0 {0} bool 
+|  |  |  DECLID "is_safe"  9.8.5 {0} bool function lval vaddr 
+|  |  PARAMLIST "("  9.8.13 {0} 
+|  |  |  INT "int"  9.8.14 {0} int 
+|  |  |  |  DECLID "newcol"  9.8.18 {15} int variable param lval vaddr 
+|  |  BLOCK "{"  9.8.26 {15}   
+|  |  |  VARDECL "="  9.9.11 {15} int  
+|  |  |  |  INT "int"  9.9.3 {15} int 
+|  |  |  |  |  DECLID "col"  9.9.7 {15} int variable lval vaddr 
+|  |  |  |  INTCON "0"  9.9.13 {15} int const 
+|  |  |  WHILE "while"  9.10.3 {15} lval vaddr  
+|  |  |  |  LT "<"  9.10.14 {15}  
+|  |  |  |  |  IDENT "col"  9.10.10 {15} int variable lval vaddr (9.9.7)
+|  |  |  |  |  IDENT "newcol"  9.10.16 {15} (0.0.0)
+|  |  |  |  BLOCK "{"  9.10.24 {16}     
+|  |  |  |  |  IF "if"  9.11.6 {16} lval vaddr  
+|  |  |  |  |  |  EQ "=="  9.11.21 {16}  
+|  |  |  |  |  |  |  INDEX "["  9.11.15 {16} lval vaddr  
+|  |  |  |  |  |  |  |  IDENT "board"  9.11.10 {16} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "col"  9.11.16 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  INDEX "["  9.11.29 {16} lval vaddr  
+|  |  |  |  |  |  |  |  IDENT "board"  9.11.24 {16} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "newcol"  9.11.30 {16} (0.0.0)
+|  |  |  |  |  |  RETURN "return"  9.11.39 {16} lval vaddr 
+|  |  |  |  |  |  |  FALSE "false"  9.11.46 {16} bool const 
+|  |  |  |  |  VARDECL "="  9.12.19 {16} int  
+|  |  |  |  |  |  INT "int"  9.12.6 {16} int 
+|  |  |  |  |  |  |  DECLID "diagonal"  9.12.10 {16} int variable lval vaddr 
+|  |  |  |  |  |  '-' "-"  9.12.32 {16}  
+|  |  |  |  |  |  |  INDEX "["  9.12.26 {16} lval vaddr  
+|  |  |  |  |  |  |  |  IDENT "board"  9.12.21 {16} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "col"  9.12.27 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  INDEX "["  9.12.39 {16} lval vaddr  
+|  |  |  |  |  |  |  |  IDENT "board"  9.12.34 {16} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "newcol"  9.12.40 {16} (0.0.0)
+|  |  |  |  |  IF "if"  9.13.6 {16} lval vaddr  
+|  |  |  |  |  |  EQ "=="  9.13.19 {16}  
+|  |  |  |  |  |  |  IDENT "diagonal"  9.13.10 {16} int variable lval vaddr (9.12.10)
+|  |  |  |  |  |  |  '-' "-"  9.13.26 {16}  
+|  |  |  |  |  |  |  |  IDENT "col"  9.13.22 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  |  IDENT "newcol"  9.13.28 {16} (0.0.0)
+|  |  |  |  |  |  RETURN "return"  9.13.36 {16} lval vaddr 
+|  |  |  |  |  |  |  FALSE "false"  9.13.43 {16} bool const 
+|  |  |  |  |  IF "if"  9.14.6 {16} lval vaddr  
+|  |  |  |  |  |  EQ "=="  9.14.19 {16}  
+|  |  |  |  |  |  |  IDENT "diagonal"  9.14.10 {16} int variable lval vaddr (9.12.10)
+|  |  |  |  |  |  |  '-' "-"  9.14.29 {16}  
+|  |  |  |  |  |  |  |  IDENT "newcol"  9.14.22 {16} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "col"  9.14.31 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  RETURN "return"  9.14.36 {16} lval vaddr 
+|  |  |  |  |  |  |  FALSE "false"  9.14.43 {16} bool const 
+|  |  |  |  |  '=' "="  9.15.10 {16} vreg  
+|  |  |  |  |  |  IDENT "col"  9.15.6 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  '+' "+"  9.15.16 {16} int vreg  
+|  |  |  |  |  |  |  IDENT "col"  9.15.12 {16} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  INTCON "1"  9.15.18 {16} int const 
+|  |  |  RETURN "return"  9.17.3 {16} lval vaddr 
+|  |  |  |  TRUE "true"  9.17.10 {16} bool const 
+|  FUNCTION ""  9.20.0 {0}   
+|  |  VOID "void"  9.20.0 {0} 
+|  |  |  DECLID "printqueens"  9.20.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  9.20.17 {0} 
+|  |  BLOCK "{"  9.20.20 {21}   
+|  |  |  VARDECL "="  9.21.11 {21} int  
+|  |  |  |  INT "int"  9.21.3 {21} int 
+|  |  |  |  |  DECLID "col"  9.21.7 {21} int variable lval vaddr 
+|  |  |  |  INTCON "0"  9.21.13 {21} int const 
+|  |  |  WHILE "while"  9.22.3 {21} lval vaddr  
+|  |  |  |  LT "<"  9.22.14 {21} bool vreg  
+|  |  |  |  |  IDENT "col"  9.22.10 {21} int variable lval vaddr (9.9.7)
+|  |  |  |  |  INTCON "8"  9.22.16 {21} int const 
+|  |  |  |  BLOCK "{"  9.22.19 {22}  
+|  |  |  |  |  CALL "("  9.23.11 {22}  
+|  |  |  |  |  |  IDENT "putc"  9.23.6 {22} void function lval vaddr (8.25.5)
+|  |  |  |  |  |  CHR "chr"  9.23.12 {22} 
+|  |  |  |  |  |  |  '+' "+"  9.23.28 {22}  
+|  |  |  |  |  |  |  |  INDEX "["  9.23.22 {22} lval vaddr  
+|  |  |  |  |  |  |  |  |  IDENT "board"  9.23.17 {22} (0.0.0)
+|  |  |  |  |  |  |  |  |  IDENT "col"  9.23.23 {22} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  |  ORD "ord"  9.23.30 {22} int vreg 
+|  |  |  |  |  |  |  |  |  CHARCON "'1'"  9.23.34 {22} char const 
+|  |  |  |  |  '=' "="  9.24.10 {22} vreg  
+|  |  |  |  |  |  IDENT "col"  9.24.6 {22} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  '+' "+"  9.24.16 {22} int vreg  
+|  |  |  |  |  |  |  IDENT "col"  9.24.12 {22} int variable lval vaddr (9.9.7)
+|  |  |  |  |  |  |  INTCON "1"  9.24.18 {22} int const 
+|  |  |  CALL "("  9.26.8 {22}  
+|  |  |  |  IDENT "putc"  9.26.3 {22} void function lval vaddr (8.25.5)
+|  |  |  |  CHARCON "'\n'"  9.26.9 {22} char const 
+|  FUNCTION ""  9.29.0 {0}   
+|  |  VOID "void"  9.29.0 {0} 
+|  |  |  DECLID "queens"  9.29.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  9.29.12 {0} 
+|  |  |  INT "int"  9.29.13 {0} int 
+|  |  |  |  DECLID "newcol"  9.29.17 {30} int variable param lval vaddr 
+|  |  BLOCK "{"  9.29.25 {30} 
+|  |  |  IFELSE "if"  9.30.3 {30} lval vaddr   
+|  |  |  |  EQ "=="  9.30.14 {30}  
+|  |  |  |  |  IDENT "newcol"  9.30.7 {30} (0.0.0)
+|  |  |  |  |  INTCON "8"  9.30.17 {30} int const 
+|  |  |  |  CALL "("  9.30.32 {30} void 
+|  |  |  |  |  IDENT "printqueens"  9.30.20 {30} void function lval vaddr (9.20.5)
+|  |  |  |  BLOCK "{"  9.31.8 {31}  
+|  |  |  |  |  VARDECL "="  9.32.14 {31} int  
+|  |  |  |  |  |  INT "int"  9.32.6 {31} int 
+|  |  |  |  |  |  |  DECLID "row"  9.32.10 {31} int variable lval vaddr 
+|  |  |  |  |  |  INTCON "0"  9.32.16 {31} int const 
+|  |  |  |  |  WHILE "while"  9.33.6 {31} lval vaddr  
+|  |  |  |  |  |  LT "<"  9.33.17 {31}  
+|  |  |  |  |  |  |  IDENT "row"  9.33.13 {31} (0.0.0)
+|  |  |  |  |  |  |  INTCON "8"  9.33.19 {31} int const 
+|  |  |  |  |  |  BLOCK "{"  9.33.22 {32}   
+|  |  |  |  |  |  |  '=' "="  9.34.23 {32}  
+|  |  |  |  |  |  |  |  INDEX "["  9.34.14 {32} lval vaddr  
+|  |  |  |  |  |  |  |  |  IDENT "board"  9.34.9 {32} (0.0.0)
+|  |  |  |  |  |  |  |  |  IDENT "newcol"  9.34.15 {32} (0.0.0)
+|  |  |  |  |  |  |  |  IDENT "row"  9.34.25 {32} (0.0.0)
+|  |  |  |  |  |  |  IF "if"  9.35.9 {32} lval vaddr  
+|  |  |  |  |  |  |  |  CALL "("  9.35.21 {32}  
+|  |  |  |  |  |  |  |  |  IDENT "is_safe"  9.35.13 {32} bool function lval vaddr (9.8.5)
+|  |  |  |  |  |  |  |  |  IDENT "newcol"  9.35.22 {32} (0.0.0)
+|  |  |  |  |  |  |  |  CALL "("  9.35.38 {32}  
+|  |  |  |  |  |  |  |  |  IDENT "queens"  9.35.31 {32} (0.0.0)
+|  |  |  |  |  |  |  |  |  '+' "+"  9.35.46 {32}  
+|  |  |  |  |  |  |  |  |  |  IDENT "newcol"  9.35.39 {32} (0.0.0)
+|  |  |  |  |  |  |  |  |  |  INTCON "1"  9.35.48 {32} int const 
+|  |  |  |  |  |  |  '=' "="  9.36.13 {32}  
+|  |  |  |  |  |  |  |  IDENT "row"  9.36.9 {32} (0.0.0)
+|  |  |  |  |  |  |  |  '+' "+"  9.36.19 {32}  
+|  |  |  |  |  |  |  |  |  IDENT "row"  9.36.15 {32} (0.0.0)
+|  |  |  |  |  |  |  |  |  INTCON "1"  9.36.21 {32} int const 
+|  CALL "("  9.42.7 {0}  
+|  |  IDENT "queens"  9.42.0 {0} void function lval vaddr (9.29.5)
+|  |  INTCON "0"  9.42.8 {0} int const 

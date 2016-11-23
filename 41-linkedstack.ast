@@ -1,0 +1,194 @@
+ROOT ""  0.0.0 {0} lval vaddr                            
+|  PROTOTYPE ""  8.23.0 {0}  
+|  |  VOID "void"  8.23.0 {0} 
+|  |  |  DECLID "__assert_fail"  8.23.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.23.19 {0}   
+|  |  |  STRING "string"  8.23.20 {0} string 
+|  |  |  |  DECLID "expr"  8.23.27 {1} string variable param lval vaddr 
+|  |  |  STRING "string"  8.23.33 {0} string 
+|  |  |  |  DECLID "file"  8.23.40 {1} string variable param lval vaddr 
+|  |  |  INT "int"  8.23.46 {0} int 
+|  |  |  |  DECLID "line"  8.23.50 {1} int variable param lval vaddr 
+|  PROTOTYPE ""  8.24.0 {0}  
+|  |  VOID "void"  8.24.0 {0} 
+|  |  |  DECLID "putb"  8.24.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.24.10 {0} 
+|  |  |  BOOL "bool"  8.24.11 {0} bool 
+|  |  |  |  DECLID "b"  8.24.16 {2} bool variable param lval vaddr 
+|  PROTOTYPE ""  8.25.0 {0}  
+|  |  VOID "void"  8.25.0 {0} 
+|  |  |  DECLID "putc"  8.25.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.25.10 {0} 
+|  |  |  CHAR "char"  8.25.11 {0} char 
+|  |  |  |  DECLID "c"  8.25.16 {3} char variable param lval vaddr 
+|  PROTOTYPE ""  8.26.0 {0}  
+|  |  VOID "void"  8.26.0 {0} 
+|  |  |  DECLID "puti"  8.26.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.26.10 {0} 
+|  |  |  INT "int"  8.26.11 {0} int 
+|  |  |  |  DECLID "i"  8.26.15 {4} int variable param lval vaddr 
+|  PROTOTYPE ""  8.27.0 {0}  
+|  |  VOID "void"  8.27.0 {0} 
+|  |  |  DECLID "puts"  8.27.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.27.10 {0} 
+|  |  |  STRING "string"  8.27.11 {0} string 
+|  |  |  |  DECLID "s"  8.27.18 {5} string variable param lval vaddr 
+|  PROTOTYPE ""  8.28.0 {0}  
+|  |  VOID "void"  8.28.0 {0} 
+|  |  |  DECLID "endl"  8.28.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.28.10 {0} 
+|  PROTOTYPE ""  8.29.0 {0}  
+|  |  INT "int"  8.29.0 {0} int 
+|  |  |  DECLID "getc"  8.29.4 {0} int function lval vaddr 
+|  |  PARAMLIST "("  8.29.9 {0} 
+|  PROTOTYPE ""  8.30.0 {0}  
+|  |  STRING "string"  8.30.0 {0} string 
+|  |  |  DECLID "getw"  8.30.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.30.12 {0} 
+|  PROTOTYPE ""  8.31.0 {0}  
+|  |  STRING "string"  8.31.0 {0} string 
+|  |  |  DECLID "getln"  8.31.7 {0} string function lval vaddr 
+|  |  PARAMLIST "("  8.31.13 {0} 
+|  PROTOTYPE ""  8.32.6 {0}  
+|  |  ARRAY "[]"  8.32.6 {0} array  
+|  |  |  STRING "string"  8.32.0 {0} function 
+|  |  |  DECLID "getargv"  8.32.9 {0} string array function lval vaddr 
+|  |  PARAMLIST "("  8.32.17 {0} 
+|  PROTOTYPE ""  8.33.0 {0}  
+|  |  VOID "void"  8.33.0 {0} 
+|  |  |  DECLID "exit"  8.33.5 {0} void function lval vaddr 
+|  |  PARAMLIST "("  8.33.10 {0} 
+|  |  |  INT "int"  8.33.11 {0} int 
+|  |  |  |  DECLID "status"  8.33.15 {11} int variable param lval vaddr 
+|  STRUCT "struct"  9.5.0 {0}   
+|  |  TYPEID "node"  9.5.7 {0} struct 
+|  |  STRING "string"  9.6.3 {0} string 
+|  |  |  FIELD "data"  9.6.10 {0} string field 
+|  |  TYPEID "node"  9.7.3 {0} field typeid 
+|  |  |  FIELD "link"  9.7.8 {0} field typeid 
+|  STRUCT "struct"  9.10.0 {0}  
+|  |  TYPEID "stack"  9.10.7 {0} struct 
+|  |  TYPEID "node"  9.11.3 {0} field typeid 
+|  |  |  FIELD "top"  9.11.8 {0} field typeid 
+|  RETURN "return"  9.16.3 {0} lval vaddr 
+|  |  EQ "=="  9.16.20 {0}  
+|  |  |  '.' "."  9.16.15 {0} struct  
+|  |  |  |  IDENT "stack"  9.16.10 {0} struct (9.10.7)
+|  |  |  |  FIELD "top"  9.16.16 {0} field 
+|  |  |  NULL "null"  9.16.23 {0} 
+|  FUNCTION ""  9.19.0 {0}   
+|  |  TYPEID "stack"  9.19.0 {0} typeid lval vaddr 
+|  |  |  DECLID "new_stack"  9.19.6 {0} function typeid lval vaddr 
+|  |  PARAMLIST "("  9.19.16 {0} 
+|  |  BLOCK "{"  9.19.19 {13}   
+|  |  |  VARDECL "="  9.20.15 {13} typeid lval vaddr  
+|  |  |  |  TYPEID "stack"  9.20.3 {13} typeid lval vaddr 
+|  |  |  |  |  DECLID "stack"  9.20.9 {13} variable typeid lval vaddr 
+|  |  |  |  NEW "new"  9.20.17 {13} 
+|  |  |  |  |  TYPEID "stack"  9.20.21 {13} 
+|  |  |  '=' "="  9.21.13 {13}  
+|  |  |  |  '.' "."  9.21.8 {13}  
+|  |  |  |  |  IDENT "stack"  9.21.3 {13} variable typeid lval vaddr (9.20.9)
+|  |  |  |  |  FIELD "top"  9.21.9 {13} field 
+|  |  |  |  NULL "null"  9.21.15 {13} 
+|  |  |  RETURN "return"  9.22.3 {13} lval vaddr 
+|  |  |  |  IDENT "stack"  9.22.10 {13} variable typeid lval vaddr (9.20.9)
+|  VARDECL "="  9.27.12 {0} typeid lval vaddr  
+|  |  TYPEID "node"  9.27.3 {0} typeid lval vaddr 
+|  |  |  DECLID "tmp"  9.27.8 {0} variable typeid lval vaddr 
+|  |  NEW "new"  9.27.14 {0} 
+|  |  |  TYPEID "node"  9.27.18 {0} 
+|  '=' "="  9.28.12 {0}  
+|  |  '.' "."  9.28.6 {0}  
+|  |  |  IDENT "tmp"  9.28.3 {0} variable typeid lval vaddr (9.27.8)
+|  |  |  FIELD "data"  9.28.7 {0} field 
+|  |  IDENT "str"  9.28.14 {0} (0.0.0)
+|  '=' "="  9.29.12 {0}  
+|  |  '.' "."  9.29.6 {0}  
+|  |  |  IDENT "tmp"  9.29.3 {0} variable typeid lval vaddr (9.27.8)
+|  |  |  FIELD "link"  9.29.7 {0} field 
+|  |  '.' "."  9.29.19 {0}  
+|  |  |  IDENT "stack"  9.29.14 {0} variable typeid lval vaddr (9.20.9)
+|  |  |  FIELD "top"  9.29.20 {0} field 
+|  '=' "="  9.30.13 {0}  
+|  |  '.' "."  9.30.8 {0}  
+|  |  |  IDENT "stack"  9.30.3 {0} variable typeid lval vaddr (9.20.9)
+|  |  |  FIELD "top"  9.30.9 {0} field 
+|  |  IDENT "tmp"  9.30.15 {0} variable typeid lval vaddr (9.27.8)
+|  BLOCK "{"  9.35.3 {14} 
+|  |  IF "if"  9.35.4 {14} lval vaddr  
+|  |  |  '!' "!"  9.35.8 {14} 
+|  |  |  |  '!' "!"  9.35.10 {14} 
+|  |  |  |  |  CALL "("  9.35.18 {14}  
+|  |  |  |  |  |  IDENT "empty"  9.35.12 {14} (0.0.0)
+|  |  |  |  |  |  IDENT "stack"  9.35.19 {14} variable typeid lval vaddr (9.20.9)
+|  |  |  CALL "("  9.35.42 {14}  
+|  |  |  |  IDENT "__assert_fail"  9.35.28 {14} void function lval vaddr (8.23.5)
+|  |  |  |  STRINGCON ""! empty (stack)""  9.35.43 {14} string const  
+|  |  |  |  |  STRINGCON ""41-linkedstack.oc""  9.35.62 {14} string const 
+|  |  |  |  |  INTCON "35"  9.35.83 {14} int const 
+|  VARDECL "="  9.36.14 {0} string  
+|  |  STRING "string"  9.36.3 {0} string 
+|  |  |  DECLID "tmp"  9.36.10 {0} string variable lval vaddr 
+|  |  '.' "."  9.36.25 {0}  
+|  |  |  '.' "."  9.36.21 {0}  
+|  |  |  |  IDENT "stack"  9.36.16 {0} variable typeid lval vaddr (9.20.9)
+|  |  |  |  FIELD "top"  9.36.22 {0} field 
+|  |  |  FIELD "data"  9.36.26 {0} field 
+|  '=' "="  9.37.13 {0}  
+|  |  '.' "."  9.37.8 {0}  
+|  |  |  IDENT "stack"  9.37.3 {0} variable typeid lval vaddr (9.20.9)
+|  |  |  FIELD "top"  9.37.9 {0} field 
+|  |  '.' "."  9.37.24 {0}  
+|  |  |  '.' "."  9.37.20 {0}  
+|  |  |  |  IDENT "stack"  9.37.15 {0} variable typeid lval vaddr (9.20.9)
+|  |  |  |  FIELD "top"  9.37.21 {0} field 
+|  |  |  FIELD "link"  9.37.25 {0} field 
+|  RETURN "return"  9.38.3 {0} lval vaddr 
+|  |  IDENT "tmp"  9.38.10 {0} variable typeid lval vaddr (9.27.8)
+|  VARDECL "="  9.43.14 {0} array  
+|  |  ARRAY "[]"  9.43.6 {0} array  
+|  |  |  STRING "string"  9.43.0 {0} variable lval 
+|  |  |  DECLID "argv"  9.43.9 {0} string array lval vaddr 
+|  |  CALL "("  9.43.24 {0} 
+|  |  |  IDENT "getargv"  9.43.16 {0} (0.0.0)
+|  VARDECL "="  9.44.12 {0} typeid lval vaddr  
+|  |  TYPEID "stack"  9.44.0 {0} typeid lval vaddr 
+|  |  |  DECLID "stack"  9.44.6 {0} variable typeid lval vaddr 
+|  |  CALL "("  9.44.24 {0} 
+|  |  |  IDENT "new_stack"  9.44.14 {0} function typeid lval vaddr (9.19.6)
+|  VARDECL "="  9.45.9 {0} int  
+|  |  INT "int"  9.45.0 {0} int 
+|  |  |  DECLID "argi"  9.45.4 {0} int variable lval vaddr 
+|  |  INTCON "0"  9.45.11 {0} int const 
+|  WHILE "while"  9.47.0 {0} lval vaddr  
+|  |  NE "!="  9.47.18 {0}  
+|  |  |  INDEX "["  9.47.11 {0} lval vaddr  
+|  |  |  |  IDENT "argv"  9.47.7 {0} (0.0.0)
+|  |  |  |  IDENT "argi"  9.47.12 {0} int variable lval vaddr (9.45.4)
+|  |  |  NULL "null"  9.47.21 {0} 
+|  |  BLOCK "{"  9.47.27 {15}  
+|  |  |  CALL "("  9.48.8 {15}  
+|  |  |  |  IDENT "push"  9.48.3 {15} (0.0.0)
+|  |  |  |  IDENT "stack"  9.48.9 {15} variable typeid lval vaddr (9.20.9)
+|  |  |  |  |  INDEX "["  9.48.20 {15} lval vaddr  
+|  |  |  |  |  |  IDENT "argv"  9.48.16 {15} (0.0.0)
+|  |  |  |  |  |  IDENT "argi"  9.48.21 {15} int variable lval vaddr (9.45.4)
+|  |  |  '=' "="  9.49.8 {15} vreg  
+|  |  |  |  IDENT "argi"  9.49.3 {15} int variable lval vaddr (9.45.4)
+|  |  |  |  '+' "+"  9.49.15 {15} int vreg  
+|  |  |  |  |  IDENT "argi"  9.49.10 {15} int variable lval vaddr (9.45.4)
+|  |  |  |  |  INTCON "1"  9.49.17 {15} int const 
+|  WHILE "while"  9.52.0 {0} lval vaddr  
+|  |  '!' "!"  9.52.7 {0} 
+|  |  |  CALL "("  9.52.15 {0}  
+|  |  |  |  IDENT "empty"  9.52.9 {0} (0.0.0)
+|  |  |  |  IDENT "stack"  9.52.16 {0} variable typeid lval vaddr (9.20.9)
+|  |  BLOCK "{"  9.52.24 {16}  
+|  |  |  CALL "("  9.53.8 {16}  
+|  |  |  |  IDENT "puts"  9.53.3 {16} void function lval vaddr (8.27.5)
+|  |  |  |  CALL "("  9.53.13 {16}  
+|  |  |  |  |  IDENT "pop"  9.53.9 {16} (0.0.0)
+|  |  |  |  |  IDENT "stack"  9.53.14 {16} variable typeid lval vaddr (9.20.9)
+|  |  |  CALL "("  9.54.8 {16} void 
+|  |  |  |  IDENT "endl"  9.54.3 {16} void function lval vaddr (8.28.5)

@@ -1,0 +1,25 @@
+        int __count;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+int count = pushnum0 
+while_9_6_0:;
+        count   pushnum100 
+        if (!) goto break_9_6_21;
+{
+count + pushnum1 
+popvarcount puti(count);
+endl();
+
+}
+        goto while_9_6_0;
+break_9_6_21):;
+while pushnum<= 

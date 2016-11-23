@@ -1,0 +1,40 @@
+        int __n;
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+();
+int fibonacci (
+        int n )
+{
+while_9_9_3:;
+        n   pushnum2 
+        if (!) goto break_9_9_14;
+n();
+        goto while_9_9_3;
+break_9_9_14):;
+if pushnum< +();
+
+}
+int n = pushnum0 
+while_9_16_0:;
+        n   pushnum10 
+        if (!) goto break_9_16_15;
+{
+puts("fibonacci(");
+puti(n);
+puts(") = ");
+puti(();
+endl();
+n + pushnum1 
+popvarn 
+}
+        goto while_9_16_0;
+break_9_16_15):;
+while pushnum< 
