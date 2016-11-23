@@ -1,3 +1,0 @@
-ROOT ""  0.0.0 {0} lval vaddr 
-|  RETURN "return"  6.5.0 {0} lval vaddr 
-|  |  IDENT "foo"  6.5.7 {0} (0.0.0)

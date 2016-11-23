@@ -1,7 +1,0 @@
- DECLID a 6.4.6 {0} int array lval vaddr  
- DECLID b 6.5.6 {0} int array lval vaddr  
- DECLID c 6.6.4 {0} int variable lval vaddr  
- DECLID f 6.7.7 {0} array function lval vaddr  
- DECLID n 6.8.5 {0} void variable lval vaddr  
- DECLID x 6.9.5 {0} bool variable lval vaddr  
- DECLID y 6.10.5 {0} bool variable lval vaddr  
